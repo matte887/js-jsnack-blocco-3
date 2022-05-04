@@ -5,18 +5,18 @@ const secondArray = [42, 63, 34, 65, 43, 45];
 console.log("first array:", firstArray.length);
 console.log("second array:", secondArray.length);
 
-const flagVariable = secondArray.length > firstArray.length;
-if (flagVariable) {
+if (secondArray.length > firstArray.length) {
     while (firstArray.length < secondArray.length) {
         const rndNumber = getRndInteger(1, 99);
-        firstArray.push(rndNumber)
+        firstArray.push(rndNumber);
     }
 } else {
     while (firstArray.length > secondArray.length) {
         const rndNumber = getRndInteger(1, 99);
-        secondArray.push(rndNumber)
+        secondArray.push(rndNumber);
     }
 }
+
 console.log("...first array:", firstArray);
 console.log("...second array:", secondArray);
 
