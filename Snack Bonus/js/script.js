@@ -6,8 +6,9 @@ let evenNumber = "";
 let oddNumber = "";
 
 numbers.forEach(thisNuber => {
-    thisNuber % 2 ? evenNumber += `${thisNuber} ` : oddNumber += `${thisNuber} `;
+    thisNuber % 2 === 0 ? evenNumber += `${thisNuber} ` : oddNumber += `${thisNuber} `;
 });
 
 document.getElementById("red").innerHTML = `I numeri dispari presenti nell'array sono: ${oddNumber}`;
+
 document.getElementById("green").innerHTML = `I numeri pari presenti nell'array sono: ${evenNumber}`;
