@@ -9,3 +9,8 @@ body {
 #green {
     color: rgb(43, 214, 0);
 }
+
+#red, #green {
+    margin: 2rem 2rem;
+    font-size: 1.5rem;
+}

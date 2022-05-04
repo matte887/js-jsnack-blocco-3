@@ -6,11 +6,7 @@ let evenNumber = "";
 let oddNumber = "";
 
 numbers.forEach(thisNuber => {
-    if (thisNuber % 2 === 0) {
-        evenNumber += `${thisNuber} `;
-    } else {
-        oddNumber += `${thisNuber} `;
-    }
+    thisNuber % 2 ? evenNumber += `${thisNuber} ` : oddNumber += `${thisNuber} `;
 });
 
 document.getElementById("red").innerHTML = `I numeri dispari presenti nell'array sono: ${oddNumber}`;
