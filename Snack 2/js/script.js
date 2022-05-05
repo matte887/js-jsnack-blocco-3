@@ -7,10 +7,7 @@ let sum = 0;
 while (sum < 50) {
     const userNumber = parseInt(prompt("Inserisci un numero"));
     sumArray.push(userNumber);
-    sumArray.forEach(number => {
-        sum += number;
-    });
-    
+    sum += userNumber;
 }
 
-console.log(sumArray);
+console.log(sumArray, sum);
