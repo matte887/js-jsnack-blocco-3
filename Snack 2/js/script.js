@@ -6,8 +6,8 @@ let sum = 0;
 
 while (sum < 50) {
     const userNumber = parseInt(prompt("Inserisci un numero"));
-    sumArray.push(userNumber);
     sum += userNumber;
+    sumArray.push(userNumber);
 }
 
 console.log(sumArray, sum);

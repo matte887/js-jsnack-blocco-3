@@ -24,7 +24,7 @@ const footballTeams = [
 ];
 
 footballTeams.forEach(thisTeam => {
-    // let {nome, puntiFatti, falliSubiti} = thisTeam;
+    // let {nome, puntiFatti, falliSubiti} = thisTeam; <-- Questa soluzione non può funzionare perché si ottiene una copia e non si può modificare...
     thisTeam.puntiFatti = getRndInteger(1, 100);
     thisTeam.falliSubiti = getRndInteger(1, 100);
 });
